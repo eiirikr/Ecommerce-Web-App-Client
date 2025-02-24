@@ -33,10 +33,36 @@ Product Catalog
 
 ## Backend
 
-ExpressJS for API Development
+User Credentials
+- Admin User
+- email: admin@mail.com
+- password: admin123
+- Dummy Customer
+- email: jeric@mail.com
+- password: sample123
 
-MongoDB for Database
+User Resources:
+- User Registration
+- User Authentication
+- Set user as admin (Admin only)
+- Retrieve User Details
+- Update Password
 
-NodeJS for Backend Development
+Product Resources:
+- Create Product (Admin only)
 
-Postman for Testing
+Cart Resources:
+- Get User's Cart
+- Add to Cart
+- Change product quantities
+
+Cart Resources:
+- Subtotal for each items
+- Total price for all items
+- Remove products from cart
+- Clear cart
+
+Order Resources:
+- Non-admin user checkout (Create order)
+- Retrieve authenticated user's orders
+- Retrieve all orders (Admin only)

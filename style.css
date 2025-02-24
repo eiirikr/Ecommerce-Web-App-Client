@@ -101,6 +101,16 @@ h2 {
   text-decoration: underline;
 }
 
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 2px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {

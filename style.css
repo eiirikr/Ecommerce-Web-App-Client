@@ -108,19 +108,10 @@ footer {
     padding: 20px;
     font-size: 10px;
     font-family: Arial, sans-serif;
-}
-
-@media (max-width: 600px) {
-    footer {
-        font-size: 12px;
-        padding: 15px;
-    }
-    padding: 2px;
     position: fixed;
     bottom: 0;
     width: 100%;
 }
-
 
 /* Responsive Design */
 @media (max-width: 768px) {

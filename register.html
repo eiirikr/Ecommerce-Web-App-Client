@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ecommerce</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,17 +20,21 @@
     <!-- Right Login Section -->
     <section class="login">
       <div class="login-box">
-        <h2 class="login-form">Login</h2>
+        <h2 class="login-form">Register</h2>
         <div class="user-details">
+          <label for="username">Username</label>
+          <input type="text" placeholder="Enter your Username" id="username" name="Username" required>
           <label for="email">Email</label>
           <input type="text" placeholder="example@gmail.com" name="email" required>
           <label for="password">Enter your Password</label>
           <input type="password" placeholder="Enter your Password" id="password" name="password" required>
+          <label for="password">Confirm Password</label>
+          <input type="password" placeholder="Conform Password" id="password" name="password" required>
         </div>
         <button class="login-button" type="submit">Login</button>
         
-        <!-- Don't have an account link -->
-        <p class="register-link">Don't have an account? <a href="register.html">Sign up</a></p>
+        <!-- have an account link -->
+        <p class="register-link">have an account? <a href="index.html">login</a></p>
       </div>
     </section>
   </div>

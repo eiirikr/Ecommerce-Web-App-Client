@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 :root {
@@ -60,10 +60,12 @@ body {
   justify-content: center;
   background: var(--white);
 }
-
+.login-form{
+  text-align: center;
+}
 .login-box {
   width: 70%;
-  text-align: center;
+  text-align: left;
 }
 
 h2 {
@@ -78,6 +80,7 @@ h2 {
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
+  
 }
 
 .login-button {

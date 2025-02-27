@@ -11,6 +11,16 @@
   --primary: #007bff;
   --gray: #f5f5f5;
 }
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(to right, Blue, indigo, red);
+    color: var(--white);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
 
 body {
   height: 100vh;
@@ -65,28 +75,69 @@ h2 {
 
 .user-details input {
   width: 100%;
-  padding: 12px;
+  padding: 20px 10px;
   margin: 10px 0;
-  border: 1px solid #ccc;
+  border: 2px solid transparent;
   border-radius: 5px;
   font-size: 16px;
-  
+  background: white;
+  border-image-source: linear-gradient(to right, blue, indigo, red);
+  border-image-slice: 1;
+}
+
+/* Buttons */
+.btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-primary {
+  background: linear-gradient(to right, blue, indigo, red);
+  background-size: 200% 100%;
+  transition: background-position 0.4s ease-in-out;
+  color: white;
+  padding: 10px 20px;
 }
 
 .login-button {
   width: 100%;
   padding: 12px;
-  background: var(--primary);
   color: var(--white);
   border: none;
-  border-radius: 5px;
-  font-size: 18px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background-position: right center;
+}
+/* Forgot Password */
+.forgot-password {
+  text-align: right;
+  margin-top: 5px;
+}
+
+.forgot-password a {
+  font-size: 0.9rem;
+  color: #555;
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  color: #3b82f6;
+  background: linear-gradient(to right, Blue, indigo, red);
+  transition: 1s;
 }
 
 .login-button:hover {
-  background: #0056b3;
+  background: linear-gradient(to right, red, indigo, blue);
+  transition: 0.5s;
 }
 /* Add styles for the register link */
 .register-link {
@@ -115,10 +166,58 @@ footer {
     bottom: 0;
     width: 100%;
 }
+*, *:before, *:after { box-sizing: border-box; }
+html { height: 100%; }
+body {
+  display:          flex;
+  align-items:      center;
+  justify-content:  center;
+  min-height:       50%;
+}
+
+.logo-container {
+  position: relative;
+  
+  &:before {
+    content:  "";
+    position: absolute;
+    top:      calc( 100% - 2px );
+    width:    50%;
+    height:   4px;
+    background: linear-gradient(to right, Blue, indigo, red);
+    transform-origin: center;
+    transform: scaleX( 0 );
+    animation: line-animation 3s ease infinite alternate;
+    margin-left: 25%;
+    z-index: 999;
+  }
+  
+  h1#page-logo {
+    font: bold 3rem 'Arial', sans-serif;
+    text-align: center;
+    animation: clip-path-reveal-1 3s ease infinite alternate;
+  }
+}
+
+@keyframes line-animation {
+  0% { transform: scaleX( 0 ); }
+  15% { transform: scaleX( 0 ); }
+  20%, 25% { transform: scaleX( 1 ); top: calc( 100% - 2px ); }
+  50% { transform: scaleX( 1 ); top: 0px; }
+  70% { transform: scaleX( 0.2 ); top: 0px; }
+  80%, 100% { transform: scaleX( 0.2 ); top: 0px; }
+}
+
+@keyframes clip-path-reveal-1 {
+  0%, 25% { clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%); }
+  50% { clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); }
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .container {
+    padding-top: 20%;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     height: 100vh;

@@ -11,6 +11,16 @@
   --primary: #007bff;
   --gray: #f5f5f5;
 }
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(to right, Blue, indigo, red);
+    color: var(--white);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
 
 body {
   height: 100vh;
@@ -75,7 +85,6 @@ h2 {
   border-image-slice: 1;
 }
 
-
 /* Buttons */
 .btn {
     width: 100%;
@@ -94,6 +103,12 @@ h2 {
   transition: background-position 0.4s ease-in-out;
   color: white;
   padding: 10px 20px;
+}
+
+.login-button {
+  width: 100%;
+  padding: 12px;
+  color: var(--white);
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -116,6 +131,13 @@ h2 {
 
 .forgot-password a:hover {
   color: #3b82f6;
+  background: linear-gradient(to right, Blue, indigo, red);
+  transition: 1s;
+}
+
+.login-button:hover {
+  background: linear-gradient(to right, red, indigo, blue);
+  transition: 0.5s;
 }
 /* Add styles for the register link */
 .register-link {

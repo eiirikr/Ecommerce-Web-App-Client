@@ -196,7 +196,7 @@ h2 {
     transform: scaleX(0);
     animation: line-animation 3s ease infinite alternate;
     margin-left: 25%;
-    z-index: 999;
+    z-index: 998;
   }
 
   h1#page-logo {

@@ -16,19 +16,30 @@ const Header = () => {
               <ion-icon name="logo-instagram"></ion-icon>
             </a>
           </div>
-          <div className="right-links">
+          <div className="inline-flex">
             <a href="#" className="text-white no-underline ml-2">
               Notifications <i className="fas fa-bell"></i>
             </a>
             <a href="#" className="text-white no-underline ml-2">
               Help <i className="fas fa-question-circle"></i>
             </a>
-            <a href="#" className="text-white no-underline ml-2">
-              English <i className="fas fa-globe"></i>
-            </a>
+            
+            <details className="relative">
+              <summary className="list-none">
+                <span href="#" className="text-white no-underline ml-2 cursor-pointer">
+                  English <i className="fas fa-globe"></i>
+                </span>
+              </summary>
+              <ul className="absolute right-[30%] list-none w-max bg-white text-indigo-900 rounded-lg z-[999] shadow-lg">
+                <li className="py-4 px-8 cursor-pointer hover:bg-indigo-500 hover:text-white hover:rounded-lg"><a href="">English</a></li>
+                <li className="py-4 px-8 cursor-pointer hover:bg-indigo-500 hover:text-white hover:rounded-lg"><a href="">Filipino</a></li>
+              </ul>
+            </details>
+
             <a href="#" className="text-white no-underline ml-2">
               <Link to={"/register"}>Register</Link>
             </a>
+            
             <a href="#" className="text-white no-underline ml-2">
               <Link to={"/login"}>Login</Link>
             </a>

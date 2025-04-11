@@ -52,7 +52,7 @@ export default function ProductPrev() {
         </div>
       </div>
       <div className="flex bg-gray-100 ssm:flex-col lg:flex-row items-center justify-center gap-3">
-        <div className="relative rounded-xl overflow-auto p-2 hover:animate-pulse">
+        <div className="relative rounded-xl overflow-auto p-2 hover:animate-pulse cursor-pointer">
           <div className="overflow-hidden relative max-w-md mx-auto bg-white dark:bg-white shadow-lg ring-1 ring-black/5 rounded-xl flex items-center gap-6 dark:highlight-white/5">
             <img src="https://store.rhyner.ch/media/9593/catalog/kuhn-rikon-inox-duromatic-comfort-schnellkochtopf-60-liter-5.jpg?size=600" alt="" className="absolute -left-6 w-28 rounded-full shadow-lg" />
             <div className="min-w-0 py-5 pl-28 pr-5">
@@ -65,7 +65,7 @@ export default function ProductPrev() {
             </div>
           </div>
         </div>
-        <div className="relative rounded-xl overflow-auto p-2 hover:animate-pulse">
+        <div className="relative rounded-xl overflow-auto p-2 hover:animate-pulse cursor-pointer">
           <div className="overflow-hidden relative max-w-md mx-auto bg-white dark:bg-white shadow-lg ring-1 ring-black/5 rounded-xl flex items-center gap-6 dark:highlight-white/5">
             <img src="https://th.bing.com/th/id/R.4166b7d1cc8241de36a326ab87b4e363?rik=MX44Xo2giFv%2fjA&riu=http%3a%2f%2fwww.lovethispic.com%2fuploaded_images%2f62005-Modern-Home-Decor.jpg&ehk=8P7wHnpaiQGH8M99WMSLnSumG1lw1Ga6che%2bN419byM%3d&risl=&pid=ImgRaw&r=0" alt="" className="absolute -left-6 w-28 rounded-full shadow-lg" />
             <div className="min-w-0 py-5 pl-28 pr-5">
@@ -78,7 +78,7 @@ export default function ProductPrev() {
             </div>
           </div>
         </div>
-        <div className="relative rounded-xl overflow-auto p-2 hover:animate-pulse">
+        <div className="relative rounded-xl overflow-auto p-2 hover:animate-pulse cursor-pointer">
           <div className="overflow-hidden relative max-w-md mx-auto bg-white dark:bg-white shadow-lg ring-1 ring-black/5 rounded-xl flex items-center gap-6 dark:highlight-white/5">
             <img src="https://image.smythstoys.com/zoom/187819_1.jpg" alt="" className="absolute -left-6 w-28 rounded-full shadow-lg" />
             <div className="min-w-0 py-5 pl-28 pr-5">
@@ -91,7 +91,7 @@ export default function ProductPrev() {
             </div>
           </div>
         </div>
-        <div className="relative rounded-xl overflow-auto p-2 hover:animate-pulse">
+        <div className="relative rounded-xl overflow-auto p-2 hover:animate-pulse cursor-pointer">
           <div className="overflow-hidden relative max-w-md mx-auto bg-white dark:bg-white shadow-lg ring-1 ring-black/5 rounded-xl flex items-center gap-6 dark:highlight-white/5">
             <img src="https://img.freepik.com/premium-photo/school-supplies-light-background_926199-9327.jpg" alt="" className="absolute -left-6 w-28 rounded-full shadow-lg" />
             <div className="min-w-0 py-5 pl-28 pr-5">
@@ -104,7 +104,7 @@ export default function ProductPrev() {
             </div>
           </div>
         </div>
-        <div className="relative rounded-xl overflow-auto p-2 hover:animate-pulse">
+        <div className="relative rounded-xl overflow-auto p-2 hover:animate-pulse cursor-pointer">
           <div className="overflow-hidden relative max-w-md mx-auto bg-white dark:bg-white shadow-lg ring-1 ring-black/5 rounded-xl flex items-center gap-6 dark:highlight-white/5">
             <img src="https://10best.co.za/wp-content/uploads/2021/04/Best-Tech-Gadgets-2020.webp" alt="" className="absolute -left-6 w-28 rounded-full shadow-lg" />
             <div className="min-w-0 py-5 pl-28 pr-5">
